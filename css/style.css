@@ -84,6 +84,23 @@ h2 {
 }
 .fixed h2 {
     visibility: visible;
-    color: #E61986;
     text-align: center;
+}
+.green {
+    color: seagreen;
+}
+.yellow {
+    color: #FFeF00;
+}
+.blue {
+    color: steelblue;
+}
+.orange {
+    color: tomato;
+}
+.pink {
+    color: #E61986;
+}
+.brown{
+    color: brown;
 }
