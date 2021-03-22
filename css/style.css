@@ -44,7 +44,6 @@ h2 {
     color: brown;
 }
 /*end common*/
-
 /*start main*/
 .container{
     width: 100%;
@@ -74,8 +73,7 @@ h2 {
     background-size: contain;
     background-position: center;
     background-image: url("../img/pattern.png");
-
-    transition: transform 0.6s;
+    transition: transform 1s;
     transform-style: preserve-3d;
 }
 .card img {
@@ -86,26 +84,15 @@ h2 {
     visibility: hidden;
 }
 .card:hover,
-.card:hover img{
+.card:hover img,
+.card:hover h2 {
     background-image: none;
     visibility: visible;
     transform: rotateY(180deg);
 }
-.card:hover h2 {
-    visibility: visible;
-    
-    transform: rotateY(180deg);
-}
-.fixed img {
-    height: 100%;
-    width: 100%;
-    padding: 16px;
-    object-fit: contain;
-    visibility: visible;
-}
+.fixed img,
 .fixed h2 {
     visibility: visible;
-    text-align: center;
 }
 /*start footer*/
 footer {
