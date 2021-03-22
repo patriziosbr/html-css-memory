@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Nerko One', cursive;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 68px;
+    text-transform: uppercase;
+    margin: 16px 0;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ADD8E6;
+}
+.card {
+    height: 210px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 0 24px 32px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    float: left;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.card-box {
+    width: 816px; /*soluzione da rivedere*/
+    margin: auto;
+}
