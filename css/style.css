@@ -18,8 +18,29 @@ h2 {
     margin-bottom: 8px;
     position: absolute;
     bottom: 0%;
-    left: 25%; /*soluzione da rivedere*/
+    /*left: 25%; soluzione da rivedere*/
     visibility: hidden;
+    clear:left;
+    width: 100%; /* meglio ma non so perchè ha funzionato*/
+    text-align: center;
+}
+.green {
+    color: seagreen;
+}
+.yellow {
+    color: #FFeF00;
+}
+.blue {
+    color: steelblue;
+}
+.orange {
+    color: tomato;
+}
+.pink {
+    color: #E61986;
+}
+.brown{
+    color: brown;
 }
 /*end common*/
 
@@ -86,21 +107,7 @@ h2 {
     visibility: visible;
     text-align: center;
 }
-.green {
-    color: seagreen;
-}
-.yellow {
-    color: #FFeF00;
-}
-.blue {
-    color: steelblue;
-}
-.orange {
-    color: tomato;
-}
-.pink {
-    color: #E61986;
-}
-.brown{
-    color: brown;
+footer {
+    background-color: #ADD8E6;
+    text-align: center;
 }
