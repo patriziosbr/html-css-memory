@@ -71,6 +71,9 @@ h2 {
     background-size: contain;
     background-position: center;
     background-image: url("../img/pattern.png");
+
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 .card img {
     height: 100%;
@@ -83,9 +86,12 @@ h2 {
 .card:hover img{
     background-image: none;
     visibility: visible;
+    transform: rotateY(180deg);
 }
 .card:hover h2 {
     visibility: visible;
+    
+    transform: rotateY(180deg);
 }
 .fixed {
     height: 210px;
@@ -106,6 +112,7 @@ h2 {
 .fixed h2 {
     visibility: visible;
     text-align: center;
+    
 }
 footer {
     background-color: #ADD8E6;
