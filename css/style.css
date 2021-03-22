@@ -23,7 +23,7 @@ h2 {
     clear:left;
     width: 100%; /* meglio ma non so perchè ha funzionato*/
     text-align: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .green {
     color: seagreen;
@@ -69,6 +69,8 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     float: left;
     position: relative;
+}
+.back {
     background-size: contain;
     background-position: center;
     background-image: url("../img/pattern.png");
@@ -94,7 +96,24 @@ h2 {
     
     transform: rotateY(180deg);
 }
-.fixed {
+.fixed img {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    object-fit: contain;
+    visibility: visible;
+}
+.fixed h2 {
+    visibility: visible;
+    text-align: center;
+}
+/*start footer*/
+footer {
+    background-color: #ADD8E6;
+    text-align: center;
+    padding: 25px;
+}
+/* .fixed {
     height: 210px;
     width: 180px;
     border-radius: 10px;
@@ -103,20 +122,4 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     float: left;
     position: relative;
-}
-.fixed img {
-    height: 100%;
-    width: 100%;
-    padding: 16px;
-    object-fit: contain;
-}
-.fixed h2 {
-    visibility: visible;
-    text-align: center;
-    
-}
-footer {
-    background-color: #ADD8E6;
-    text-align: center;
-    padding: 25px;
-}
+} */
