@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*common*/
 body {
     font-family: 'Nerko One', cursive;
 }
@@ -14,16 +15,28 @@ h1 {
     padding: 16px 0;
 }
 h2 {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     position: absolute;
     bottom: 0%;
     left: 25%; /*soluzione da rivedere*/
     visibility: hidden;
 }
+/*end common*/
+
+/*start main*/
 .container{
     width: 100%;
     margin: 0 auto;
     background-color: #ADD8E6;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.card-box {
+    width: 816px; /*soluzione da rivedere*/
+    margin: auto;
 }
 .card {
     height: 210px;
@@ -34,16 +47,43 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     float: left;
     position: relative;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-image: url("../img/pattern.png");
 }
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+.card img {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    object-fit: contain;
+    visibility: hidden;
 }
-.card-box {
-    width: 816px; /*soluzione da rivedere*/
-    margin: auto;
+.card:hover,
+.card:hover img{
+    background-image: none;
+    visibility: visible;
+}
+.card:hover h2 {
+    visibility: visible;
+}
+.fixed {
+    height: 210px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 0 24px 32px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    float: left;
+    position: relative;
+}
+.fixed img {
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+    object-fit: contain;
+}
+.fixed h2 {
+    visibility: visible;
+    color: #E61986;
+    text-align: center;
 }
