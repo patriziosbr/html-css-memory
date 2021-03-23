@@ -6,23 +6,22 @@
 /*common*/
 body {
     font-family: 'Nerko One', cursive;
-}
-h1 {
-    color: #ffffff;
     text-align: center;
+}
+header h1 {
+    color: #ffffff;
     font-size: 68px;
     text-transform: uppercase;
     padding: 16px 0;
 }
 h2 {
-    margin-bottom: 8px;
-    position: absolute;
+    padding-bottom: 8px;
+    position: absolute; /* diventano inline block e serve il width 100% */
     bottom: 0%;
     /*left: 25%; soluzione da rivedere*/
     visibility: hidden;
-    clear:left;
-    width: 100%; /* meglio ma non so perchè ha funzionato*/
-    text-align: center;
+    /* clear:left; */
+    width: 100%; /* meglio ma non so perchè ha funzionato*/  
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .green {
@@ -56,39 +55,40 @@ h2 {
     clear: both;
 }
 .card-box {
-    width: 816px; /*soluzione da rivedere*/
+    width: 60%; /*soluzione in px da rivedere*/
     margin: auto;
 }
 .card {
-    height: 210px;
-    width: 180px;
+    width: calc( 25% - 24px );
+    /* height: 210px; */
     border-radius: 10px;
-    margin: 0 24px 32px 0;
+    margin: 16px 12px;
     background-color: #ffffff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     float: left;
     position: relative;
+    cursor: pointer;
 }
 .back {
     background-size: contain;
     background-position: center;
     background-image: url("../img/pattern.png");
-    transition: transform 1s;
-    transform-style: preserve-3d;
+    /* transition: transform 1s;
+    transform-style: preserve-3d; */
 }
 .card img {
-    height: 100%;
     width: 100%;
-    padding: 16px;
+    /* height: 100%; */
+    padding: 32px;
     object-fit: contain;
     visibility: hidden;
 }
 .card:hover,
 .card:hover img,
 .card:hover h2 {
-    background-image: none;
     visibility: visible;
-    transform: rotateY(180deg);
+    background-image: none;
+    /* transform: rotateY(180deg); */
 }
 .fixed img,
 .fixed h2 {
@@ -96,9 +96,8 @@ h2 {
 }
 /*start footer*/
 footer {
-    background-color: #ADD8E6;
-    text-align: center;
     padding: 25px;
+    background-color: #ADD8E6;
 }
 /* .fixed {
     height: 210px;
